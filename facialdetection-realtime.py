@@ -28,8 +28,14 @@ while True:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
         cv2.circle(frame,(x+(w/2),y+(h/2)), 5, (0,0,255), -1)
 
+        #Print realtime X and Y values on the video overlay
+        font_face = cv2.FONT_HERSHEY_SIMPLEX
+        scale = 0.4
+        color = (255, 255, 255)
+        cv2.putText(frame, "X: {}     Y: {}".format(x+(w/2),y+(h/2)), (500,400), font_face, scale, color, 1, cv2.LINE_AA)
+
         #print the X and Y coordinates for the middle of the face
-        print ("X: {}     Y: {} /n".format(x+(w/2),y+(h/2)))
+        #print ("X: {}     Y: {}".format(x+(w/2),y+(h/2)))
 
     # Display the resulting frame with the overlay
     cv2.imshow('Video', frame)
