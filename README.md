@@ -2,7 +2,7 @@
 
 This code uses a cascade to perform facial tracking efficiently and quickly. It uses the OpenCV library and currently creates a box around the face in real time.
 
-####Required
+#### Required
 
 - opencv-python
 
@@ -12,5 +12,5 @@ This code uses a cascade to perform facial tracking efficiently and quickly. It 
 
 `$ pip install numpy`
 
-####Future Plans
+#### Future Plans
 I plan to use this code as the base for a library that would allow for single-line facial detection in other programs that would simply return the X and Y coordinates for the face
