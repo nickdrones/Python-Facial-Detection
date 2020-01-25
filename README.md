@@ -1,6 +1,6 @@
 ### Simple Python + OpenCV Facial Detection
 
-This code uses a cascade to perform facial tracking efficiently and quickly. It uses the OpenCV library and currently creates a box around the face in real time.
+This code uses the cascade file (provided by OpenCV) to perform facial tracking efficiently and quickly. It uses the OpenCV library and currently creates a box around the face in real time.
 
 #### Required
 
